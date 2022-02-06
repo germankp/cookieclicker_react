@@ -1,0 +1,51 @@
+.cookieHolder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cookie {
+  width: 300px;
+  max-width: 100%;
+  height: 300px;
+  background: url(./assets/cookie.webp) center no-repeat;
+  background-size: 100%;
+  animation: spin 60s infinite linear;
+  cursor: pointer;
+  transition: all 100ms linear;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.cookie:hover {
+  background-size: 98%;
+}
+
+.cookie:active {
+  background-size: 100%;
+}
+
+.counter {
+  font-size: 24px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(251, 191, 129);
+  width: 70px;
+  height: 40px;
+  line-height: 39px;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 4px;
+  box-shadow: 0px 0px 6px 3px rgb(201, 139, 73) inset;
+}
